@@ -18,7 +18,7 @@ class GFG {
     return n + 1;
   }
 
-  public static void Insert(String args[]) {
+  public static void main(String args[]) {
     int arr[] = new int[5], cap = 5, n = 3;
 
     arr[0] = 5;
@@ -44,3 +44,6 @@ class GFG {
     }
   }
 }
+
+// Time Complexity: O(n)
+// Auxiliary Space: O(1)

@@ -1,3 +1,20 @@
+// In a realm where numbers hold secrets, a captivating challenge awaits, which is to, Reverse an Array !!!
+
+// Our Task: Given an array (or string), the task is to reverse the array.
+ 
+
+// Examples : 
+
+// Input  : arr[] = {1, 2, 3}
+// Output : arr[] = {3, 2, 1}
+
+// Input :  arr[] = {4, 5, 1, 2} 
+// Output : arr[] = {2, 1, 5, 4}
+
+// reverse-a-number
+
+// Time Complexity : Theta(n)
+
 import java.util.*;
 import java.io.*;
 import java.lang.*;

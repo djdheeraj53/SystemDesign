@@ -18,3 +18,6 @@ class GFG {
     System.out.println(search(arr, arr.length, x));
   }
 }
+
+// Time Complexity: O(n)
+// Auxiliary Space: O(1) 

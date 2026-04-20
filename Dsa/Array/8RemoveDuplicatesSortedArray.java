@@ -1,3 +1,18 @@
+// In a realm where numbers hold secrets, a captivating challenge awaits, which is to, Remove Duplicates from a Sorted Array !!!
+
+// Our Task: Given a sorted array, the task is to remove the duplicate elements from the array.
+ 
+// Examples: 
+// Input  : arr[] = {2, 2, 2, 2, 2}
+// Output : arr[] = {2}
+//          new size = 1
+
+// Input  : arr[] = {1, 2, 2, 3, 4, 4, 4, 5, 5}
+// Output : arr[] = {1, 2, 3, 4, 5}
+//          new size = 5
+ 
+// We have 2 approaches to solve the problem: Naive approach and Efficient approach
+
 import java.util.*;
 import java.io.*;
 import java.lang.*;
@@ -74,7 +89,7 @@ class GFG
     			res++;
     		}
     	}
-
+–
     	return res;
     }
 
