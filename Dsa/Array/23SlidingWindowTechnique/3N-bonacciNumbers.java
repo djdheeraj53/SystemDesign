@@ -1,6 +1,5 @@
 // Java program to print n-bonacci numbers using sliding window technique
 class GFG { 
-	
 	// Function to print bonacci series 
 	static void bonacciseries(int n, int m) 
 	{ 
@@ -31,4 +30,3 @@ class GFG {
 }
 // Output: 0 0 0 0 1 1 2 4 8 16 32 64 128 256 512
 // Time Complexity: O(m) and Auxiliary Space: O(m)
-
