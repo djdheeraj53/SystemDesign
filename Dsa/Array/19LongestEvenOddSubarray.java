@@ -72,9 +72,6 @@ class GFG
 // Auxiliary Space: O(1)
 
 // 2)Efficient Approach
-import java.util.*;
-import java.io.*;
-import java.lang.*;
 class GFG 
 { 
     
