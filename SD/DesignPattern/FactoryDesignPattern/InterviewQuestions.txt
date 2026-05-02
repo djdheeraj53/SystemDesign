@@ -1,0 +1,106 @@
+Factory Pattern – Interview Questions & Answers
+❓ Q1. Factory Method Pattern kya hota hai?
+
+👉 Answer:
+Factory Method ek creational design pattern hai jisme object creation ko ek method (factory) ke 
+rthrough delegate kiya jata hai instead of directly using new.
+
+👉 Client ko sirf interface pata hota hai, implementation nahi.
+
+❓ Q2. Factory Method ka main purpose kya hai?
+
+👉 Answer:
+
+Object creation ko abstract karna
+Loose coupling lana
+Code ko extensible banana
+❓ Q3. Factory Method aur Simple Factory me kya difference hai?
+
+👉 Answer:
+
+Factory Method	Simple Factory
+Interface define karta hai	Ek hi class me logic hota hai
+Subclasses decide karti hain	if-else / switch hota hai
+Open/Closed follow karta hai	OCP violate karta hai
+
+👉 Simple Factory = shortcut
+👉 Factory Method = proper design pattern
+
+❓ Q4. Factory Method aur Abstract Factory me difference?
+
+👉 Answer:
+
+Factory Method	Abstract Factory
+Ek product create karta hai	Multiple related products create karta hai
+Simple use case	Complex system
+Example: Notification	Example: UI Theme (Button + Checkbox)
+❓ Q5. Factory Method kab use karna chahiye?
+
+👉 Answer:
+
+Jab object type runtime pe decide ho
+Jab code ko loosely coupled rakhna ho
+Jab multiple object types ho
+
+👉 Example: Payment system (UPI / Card / Wallet)
+
+❓ Q6. Factory Method ke components kya hote hain?
+
+👉 Answer:
+
+Product (interface)
+Concrete Product
+Creator (factory method define karta hai)
+Concrete Creator (actual object banata hai)
+❓ Q7. Factory Method ka real-world example?
+
+👉 Answer:
+
+Notification system (Email / SMS / Push)
+Payment gateway
+Game enemy spawning
+Logger frameworks
+❓ Q8. Factory Method ke advantages kya hain?
+
+👉 Answer:
+
+Loose coupling
+Easy extension
+Clean code
+OCP follow karta hai
+❓ Q9. Factory Method ke disadvantages kya hain?
+
+👉 Answer:
+
+Zyada classes ban jati hain
+Complexity badh sakti hai
+Small projects me overkill
+❓ Q10. Kya Factory Method performance ko impact karta hai?
+
+👉 Answer:
+Generally nahi 🚀
+But:
+
+Extra abstraction layer hoti hai
+Slight overhead ho sakta hai
+
+👉 Lekin maintainability gain zyada important hota hai.
+
+🔥 Bonus Tricky Question
+❓ Q11. Agar sirf ek hi factory class ho aur switch-case ho to kya wo Factory Method hai?
+
+👉 Answer:
+❌ Nahi
+
+👉 Wo Simple Factory hai
+👉 Factory Method me subclasses decide karti hain object creation
+
+⚡ Super Short Revision (Interview Last Minute)
+
+👉 Factory Method =
+
+“Object creation ko subclass pe delegate karna”
+
+👉 Key Benefit =
+✔ Loose coupling
+✔ Extensibility

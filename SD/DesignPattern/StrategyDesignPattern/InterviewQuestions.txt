@@ -1,0 +1,155 @@
+Strategy Design Pattern – Interview Q&A
+🧠 Basic Level
+1. What is Strategy Design Pattern?
+
+👉 Strategy ek behavioral pattern hai jo multiple algorithms ko define karta hai aur unhe interchangeable bana deta hai runtime pe.
+
+2. Why do we use Strategy Pattern?
+
+👉
+
+If-else reduce karne ke liye
+Runtime pe behavior change karne ke liye
+Code ko flexible aur maintainable banane ke liye
+3. Real-world example?
+
+👉 Payment system (Credit Card, UPI, PayPal)
+
+4. What problem does it solve?
+
+👉
+
+Hardcoded logic
+Large conditional statements
+Tight coupling
+5. Main components of Strategy Pattern?
+
+👉
+
+Strategy Interface
+Concrete Strategies
+Context
+Client
+⚙️ Intermediate Level
+6. How does Strategy Pattern work?
+
+👉
+Client → Strategy select karta hai → Context ko deta hai → Context strategy execute karta hai
+
+7. Difference between Strategy and State Pattern?
+
+👉
+
+Strategy	State
+Client decides strategy	State khud change hota hai
+Behavior change externally	Behavior change internally
+8. Strategy vs Factory Pattern?
+
+👉
+
+Strategy	Factory
+Behavior choose karta hai	Object create karta hai
+Runtime switching	Object creation logic
+9. When NOT to use Strategy Pattern?
+
+👉
+
+Jab sirf 1–2 simple conditions ho
+Over-engineering ho sakta hai
+Small applications me unnecessary complexity
+10. Can Strategy Pattern replace if-else completely?
+
+👉
+❌ Nahi, har jagah nahi
+✔ Useful jab multiple complex conditions ho
+
+11. How does it follow Open/Closed Principle?
+
+👉
+New strategy add kar sakte ho bina existing code change kiye
+
+12. How does it improve testability?
+
+👉
+Har strategy ko individually test kar sakte ho
+
+💡 Advanced Level
+13. What is the role of Context?
+
+👉
+Context strategy ko hold karta hai aur execution delegate karta hai
+
+14. Can strategy be changed at runtime?
+
+👉
+✔ Haan, setStrategy() method se easily
+
+15. How do you pass data to strategies?
+
+👉
+
+Method parameters se
+Constructor injection se
+16. Does Strategy Pattern increase number of classes?
+
+👉
+✔ Haan, har algorithm ke liye separate class hoti hai
+
+17. How is Strategy Pattern different from Polymorphism?
+
+👉
+Strategy = Polymorphism ka structured use
+Different behaviors ko encapsulate karta hai
+
+18. Real-world system design example?
+
+👉
+
+Payment gateway
+Sorting algorithms
+Pricing strategy (discount, offers)
+Navigation apps (fastest route, shortest route)
+19. Can we use lambda instead of classes?
+
+👉
+✔ Haan (Java 8+, JS, Python)
+
+Example (Java Lambda):
+
+PaymentStrategy strategy = amount -> System.out.println("Paid " + amount);
+20. What are trade-offs of Strategy Pattern?
+
+👉
+✔ Pros:
+
+Flexible
+Clean code
+
+❌ Cons:
+
+More classes
+Client complexity
+Slight performance overhead
+🔥 Bonus (Interview Killer Question)
+21. How would you implement Strategy Pattern in React?
+
+👉
+Use:
+
+Different functions / hooks as strategies
+Pass function as props
+
+Example:
+
+const paymentStrategies = {
+  card: () => "Pay via Card",
+  upi: () => "Pay via UPI"
+};
+
+function Payment({ method }) {
+  return <div>{paymentStrategies[method]()}</div>;
+}
+🚀 Pro Tip (Must Say in Interview)
+
+👉
+“Strategy Pattern is ideal when you have multiple ways of doing the same task and want to switch between them dynamically without modifying existing code.”
